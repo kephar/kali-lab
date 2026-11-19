@@ -1,0 +1,6 @@
+{
+  "name": "Kali Linux Lab",
+  "image": "kalilinux/kali-rolling:latest",
+  "runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW"],
+  "postCreateCommand": "apt-get update && apt-get install -y nmap iproute2 net-tools iputils-ping traceroute dnsutils curl wget netcat-openbsd whois"
+}
